@@ -1,3 +1,4 @@
+import 'package:chat_app/screens/drawer.dart';
 import 'package:chat_app/widgets/catagory_selector.dart';
 import 'package:chat_app/widgets/favourite_contacts.dart';
 import 'package:chat_app/widgets/recent_chats.dart';
@@ -12,6 +13,15 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      drawer: Drawer(
+        child: ListView(
+          children: [
+            ListTile(
+              title: Text('Hello'),
+            )
+          ],
+        ),
+      ),
       backgroundColor: Theme.of(context).primaryColor,
       appBar: AppBar(
         elevation: 0,
